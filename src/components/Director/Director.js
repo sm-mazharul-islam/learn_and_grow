@@ -26,10 +26,12 @@ const Director = () => {
                                     <p>Gender: {importantPerson.gender}</p>
                                     <p><small>Position:{importantPerson.position}</small></p>
                                     <p>Phone: {importantPerson.phone}</p>
+                                    <button className="btn-primary rounded">Details</button>
                                 </div>
                             </div>
 
                         ))}
+
                 </div>
             </div>
         </div>

@@ -26,10 +26,14 @@ const About = () => {
 
                                 <p>Details: {teacher.institution}</p>
                                 <p><small>Subject:{teacher.subject}</small></p>
+                                <button className="btn-primary rounded">Information</button>
                             </div>
+
                         </div>
 
+
                     ))}
+
             </div>
         </div>
     );
