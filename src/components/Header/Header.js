@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
@@ -7,32 +8,45 @@ const Header = () => {
 
     return (
 
-
-
-        <div className="container">
+        <div>
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Our Coaching Academy</Navbar.Brand>
+                    <Navbar.Brand className="p-2" href="#home">Explore Knowledge</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto p-4">
 
-                            <NavLink to="/home" activeStyle={{
-                                fontWeight: "bold",
-                                color: "red"
-                            }}>Home</NavLink>
+                            <NavLink to="/home" className="p-2  "
+                                style={{
+                                    textDecoration: 'none'
+                                }} activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "red"
+                                }}>Home</NavLink>
                             <NavLink to="/about"
+                                className="p-2  "
+                                style={{
+                                    textDecoration: 'none'
+                                }}
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
                                 }}>About</NavLink>
                             <NavLink to="/service"
+                                className="p-2  "
+                                style={{
+                                    textDecoration: 'none'
+                                }}
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
                                 }}>Service</NavLink>
                             <NavLink to="/controller"
+                                className="p-2  "
+                                style={{
+                                    textDecoration: 'none'
+                                }}
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
@@ -60,6 +74,12 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+
 
 
 

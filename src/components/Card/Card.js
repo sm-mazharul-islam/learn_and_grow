@@ -11,8 +11,8 @@ const Cards = (props) => {
                 <Card>
                     <Card.Img variant="top" src={picture} />
                     <Card.Body>
-                        <Card.Title>Name:{instructor_name}</Card.Title>
                         <h5>Course Name:{course_name}</h5>
+                        <Card.Title>Name:{instructor_name}</Card.Title>
                         <p>Subject:{subject}</p>
                         <p><small>Details:{details}</small></p>
                     </Card.Body>
