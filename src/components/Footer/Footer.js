@@ -22,9 +22,17 @@ const Footer = () => {
         style={{ width: "100%", height: "300px" }}
       >
         <div className="footer-left">
-          <h3>
-            Knowledge <span> is Power </span>
-          </h3>
+          <div style={{ display: "flex" }}>
+            <img
+              src="https://i.ibb.co.com/zV8PPNY3/logo-learn-and-grow.png"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+            <h3>
+              Learn <span>&</span> Grow
+            </h3>
+          </div>
 
           <p className="footer-links">
             <Link to="/home">Home</Link>
@@ -35,35 +43,35 @@ const Footer = () => {
             <Link to="/controller">Director</Link>
           </p>
 
-          <p className="footer-company-name">Company Name © 2015</p>
+          <p className="footer-company-name">Learn & Grow © 2021</p>
         </div>
 
         <div className="footer-center">
           <div>
             <FontAwesomeIcon className="icon" icon={faMapMarked} size="2x" />
             <p className="d-inline-block">
-              <span>444 S. Cedros Ave</span> Solana Beach, California
+              <span>Dhanmondi, street-27</span> Dhaka, Bangladesh
             </p>
           </div>
 
           <div>
             <FontAwesomeIcon className="icon" icon={faPhone} size="2x" />
-            <p>+1.555.555.5555</p>
+            <p>+8801111111111</p>
           </div>
 
           <div>
             <FontAwesomeIcon className="icon" icon={faEnvelope} size="2x" />
             <p>
-              <a href="mailto:support@company.com">support@company.com</a>
+              <Link to="">learnandgrow@company.com</Link>
             </p>
           </div>
         </div>
 
         <div className="footer-right">
-          <p className="footer-company-about">
+          <p className="footer-company-about" style={{ textAlign: "justify" }}>
             <span>About Us</span>
-            Knowledge is power means that a person has education and a complete
-            control on his life by using that knowledge.
+            Knowledge is power. Our team currently serves in Bangladesh with
+            dedicated teachers, aiming to grow our community globally.
           </p>
 
           <div className="footer-icons">

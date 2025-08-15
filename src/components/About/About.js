@@ -30,7 +30,7 @@ const About = () => {
               <p>
                 <small>Subject:{teacher.subject}</small>
               </p>
-              <button className="btn-primary rounded">Information</button>
+              <button className="brd">Information</button>
             </div>
           </div>
         ))}

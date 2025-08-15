@@ -20,13 +20,13 @@ const Director = () => {
                   <img width="100%" src={importantPerson.image} alt="" />
                 </div>
                 <h4 className="mt-4">{importantPerson.name}</h4>
-                <p>Age:{importantPerson.age}</p>
-                <p>Gender: {importantPerson.gender}</p>
+                {/* <p>Age:{importantPerson.age}</p>
+                 <p>Gender: {importantPerson.gender}</p> */}
                 <p>
                   <small>Position:{importantPerson.position}</small>
                 </p>
                 <p>Phone: {importantPerson.phone}</p>
-                <button className="btn-primary rounded">Details</button>
+                <button className="brd">Details</button>
               </div>
             </div>
           ))}

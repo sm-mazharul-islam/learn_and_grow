@@ -58,7 +58,9 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <h1>Our Courses</h1>
+      <h1 style={{ textDecoration: "underline", marginTop: "10px" }}>
+        𝙊𝙪𝙧 𝘾𝙤𝙪𝙧𝙨𝙚𝙨
+      </h1>
       <div className="container">
         <Row xs={1} md={4} className="g-4 mt-4">
           {courses.map((course) => (
@@ -68,7 +70,7 @@ const Home = () => {
       </div>
       <div className="m-4 p-4">
         <Link to="/service">
-          <Button variant="warning">View More</Button>
+          <Button variant="success">View More</Button>
         </Link>
       </div>
     </div>

@@ -5,68 +5,72 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-        style={{ width: "100%", height: "80px" }}
-      >
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
         <Container>
-          <Navbar.Brand className="p-2  " href="#home">
-            Explore Knowledge
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <img
+            src="https://i.ibb.co.com/zV8PPNY3/logo-learn-and-grow.png"
+            width="10%"
+            height="50px"
+            alt=""
+          />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={{ background: "black" }}
+          />
           <Navbar.Collapse id="responsive-navbar-nav ">
-            <Nav className="ms-auto p-4">
+            <Nav className="ms-auto ">
               <NavLink
                 to="/home"
-                className="p-2  "
+                className="p-2"
                 style={{
                   textDecoration: "none",
+                  color: "black",
                 }}
                 activeStyle={{
                   fontWeight: "bold",
-                  color: "red",
+                  color: "green",
                 }}
               >
                 Home
               </NavLink>
               <NavLink
                 to="/about"
-                className="p-2  "
+                className="p-2"
                 style={{
                   textDecoration: "none",
+                  color: "black",
                 }}
                 activeStyle={{
                   fontWeight: "bold",
-                  color: "red",
+                  color: "green",
                 }}
               >
                 About
               </NavLink>
               <NavLink
                 to="/service"
-                className="p-2  "
+                className="p-2"
                 style={{
                   textDecoration: "none",
+                  color: "black",
                 }}
                 activeStyle={{
                   fontWeight: "bold",
-                  color: "red",
+                  color: "green",
                 }}
               >
                 Service
               </NavLink>
               <NavLink
                 to="/controller"
-                className="p-2  "
+                className="p-2"
                 style={{
                   textDecoration: "none",
+                  color: "black",
                 }}
                 activeStyle={{
                   fontWeight: "bold",
-                  color: "red",
+                  color: "green",
                 }}
               >
                 Director
