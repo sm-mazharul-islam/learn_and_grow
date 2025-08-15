@@ -1,42 +1,42 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import './About.css'
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import "./About.css";
 
 const About = () => {
-    const [about, setAbout] = useState([]);
-    useEffect(() => {
-        fetch('/teacher_data_api.json')
-            .then(res => res.json())
-            .then(data => setAbout(data))
+  const [about, setAbout] = useState([]);
+  useEffect(() => {
+    fetch("/teacher_data_api.json")
+      .then((res) => res.json())
+      .then((data) => setAbout(data));
+  }, []);
+  return (
+    <div className="about-container mt-4">
+      <div className="row">
+        {about.map((teacher) => (
+          <div className="col-md-3">
+            <div className="cart">
+              <div className="logo-image">
+                <img
+                  className="w-50"
+                  height="100px"
+                  src={teacher.picture}
+                  alt=""
+                />
+              </div>
+              <h4 className="mt-4">{teacher.name}</h4>
 
-    }, [])
-    return (
-        <div className="about-container mt-4">
-            <div className="row">
-                {
-                    about.map((teacher) => (
-                        <div className="col-md-3">
-                            <div className="cart">
-                                <div className="logo-image">
-                                    <img className="w-50" src={teacher.picture} alt="" />
-                                </div>
-                                <h4 className=
-                                    "mt-4">Name:{teacher.name}</h4>
-
-                                <p>Details: {teacher.institution}</p>
-                                <p><small>Subject:{teacher.subject}</small></p>
-                                <button className="btn-primary rounded">Information</button>
-                            </div>
-
-                        </div>
-
-
-                    ))}
-
+              <p>Details: {teacher.institution}</p>
+              <p>
+                <small>Subject:{teacher.subject}</small>
+              </p>
+              <button className="btn-primary rounded">Information</button>
             </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default About;

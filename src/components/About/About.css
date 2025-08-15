@@ -1,9 +1,19 @@
-.about-container{
-    padding: 30px;
+.about-container {
+  padding: 30px;
 }
-.cart{
-    margin: 10px;
-    border: 1px solid gray;
-    padding: 10px;
-    height: 500px;
+.cart {
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  height: 300px;
+}
+
+.about2-container {
+  padding: 30px;
+}
+.cart2 {
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  height: 500px;
 }
